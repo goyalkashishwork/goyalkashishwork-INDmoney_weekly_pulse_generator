@@ -319,7 +319,7 @@ def main():
 
         col_email_1, col_email_2 = st.columns([1, 1])
         with col_email_1:
-            if st.button("Generate Premium HTML Email"):
+            if st.button("Generate draft Email"):
                 with st.spinner("Generating premium draft..."):
                     html_email = generate_html_email(report)
                     st.session_state['last_html_email'] = html_email
